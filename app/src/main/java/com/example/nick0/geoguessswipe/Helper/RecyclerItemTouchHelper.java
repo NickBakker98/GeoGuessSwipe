@@ -1,4 +1,4 @@
-package com.example.nick0.geoguessswipe;
+package com.example.nick0.geoguessswipe.Helper;
 
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;

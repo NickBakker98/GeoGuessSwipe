@@ -1,10 +1,14 @@
-package com.example.nick0.geoguessswipe;
+package com.example.nick0.geoguessswipe.Util;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.nick0.geoguessswipe.Model.GeoObject;
+import com.example.nick0.geoguessswipe.R;
+import com.example.nick0.geoguessswipe.Util.GeoObjectViewHolder;
 
 import java.util.List;
 
@@ -37,6 +41,14 @@ public class GeoObjectAdapter extends RecyclerView.Adapter<GeoObjectViewHolder> 
     @Override
     public int getItemCount(){
         return listGeoObject.size();
+    }
+
+    public GeoObject getItem(int position){
+        return listGeoObject.get(position);
+    }
+
+    public void removeItem(int position){
+        listGeoObject.remove(position);
     }
 
 }
